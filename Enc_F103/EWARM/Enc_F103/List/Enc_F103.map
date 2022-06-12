@@ -1,0 +1,732 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  08/Jun/2022  14:10:09
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Exe\Enc_F103.out
+#    Map file     =
+#        C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\List\Enc_F103.map
+#    Command line =
+#        -f "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Exe\Enc_F103.out.rsp"
+#        ("C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\Core\main.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\EWARM\startup_stm32f103xb.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_cortex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_dma.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_exti.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_flash.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_flash_ex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_gpio.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_gpio_ex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\Core\stm32f1xx_hal_msp.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_pcd.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_pcd_ex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_pwr.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_rcc.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_rcc_ex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_tim.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_hal_tim_ex.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\Core\stm32f1xx_it.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver\stm32f1xx_ll_usb.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\CMSIS\system_stm32f1xx.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\App\usb_device.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library\usbd_cdc.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\App\usbd_cdc_if.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\Target\usbd_conf.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library\usbd_core.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library\usbd_ctlreq.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\App\usbd_desc.o"
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library\usbd_ioreq.o"
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\Exe\Enc_F103.out" --map
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM\Enc_F103\List\Enc_F103.map" --config
+#        "C:\Users\CanchezAK\Documents\IAR EW for
+#        ARM\Enc_F103\EWARM/stm32f103xb_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x801'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xec
+  .intvec            ro code   0x800'0000    0xec  startup_stm32f103xb.o [1]
+                             - 0x800'00ec    0xec
+
+"P1":                                      0x5104
+  .text              ro code   0x800'00ec  0x101e  xprintffull.o [8]
+  .text              ro code   0x800'110a    0x1e  xencoding_8859_1.o [8]
+  .text              ro code   0x800'1128    0x7c  xlocale_c.o [8]
+  .text              ro code   0x800'11a4    0x16  strchr.o [10]
+  .text              ro code   0x800'11ba     0xa  xsprout.o [8]
+  .text              ro code   0x800'11c4    0x40  xfail_s.o [8]
+  .text              ro code   0x800'1204    0x14  strlen_small.o [10]
+  .text              ro code   0x800'1218    0x58  memchr.o [10]
+  .text              ro code   0x800'1270    0x18  ABImemcpy_small.o [10]
+  .text              ro code   0x800'1288    0x70  frexp.o [9]
+  .text              ro code   0x800'12f8    0x34  DblCmpLe.o [9]
+  .text              ro code   0x800'132c    0x34  DblCmpGe.o [9]
+  .text              ro code   0x800'1360   0x13a  ldexp.o [9]
+  .rodata            const     0x800'149a     0x2  xlocale_c.o [8]
+  .text              ro code   0x800'149c    0x36  DblToS32.o [9]
+  .rodata            const     0x800'14d2     0x2  xlocale_c.o [8]
+  .text              ro code   0x800'14d4    0x22  S32ToDbl.o [9]
+  .rodata            const     0x800'14f6     0x1  xlocale_c.o [8]
+  .text              ro code   0x800'14f8   0x24e  DblAddSub.o [9]
+  .text              ro code   0x800'1748   0x246  DblDiv.o [9]
+  .text              ro code   0x800'1990    0x22  DblToU32.o [9]
+  .text              ro code   0x800'19b4    0x1c  U32ToDbl.o [9]
+  .text              ro code   0x800'19d0   0x1aa  DblMul.o [9]
+  .text              ro code   0x800'1b7a     0xa  xmbcurmax.o [8]
+  .text              ro code   0x800'1b84   0x230  I64DivMod.o [10]
+  .text              ro code   0x800'1db4     0x6  abort.o [8]
+  .text              ro code   0x800'1dbc     0x2  I64DivZer.o [10]
+  .text              ro code   0x800'1dc0    0x14  exit.o [11]
+  .text              ro code   0x800'1dd4   0x9fa  stm32f1xx_hal_pcd.o [6]
+  .text              ro code   0x800'27d0   0x1f6  usbd_conf.o [4]
+  .text              ro code   0x800'29c8   0x9e8  stm32f1xx_ll_usb.o [6]
+  .text              ro code   0x800'33b0    0xc4  stm32f1xx_hal_cortex.o [6]
+  .text              ro code   0x800'3474   0x27c  usbd_core.o [7]
+  .text              ro code   0x800'36f0   0x24a  main.o [2]
+  .text              ro code   0x800'393a    0x34  stm32f1xx_hal_pcd_ex.o [6]
+  .text              ro code   0x800'3970   0x45e  usbd_ctlreq.o [7]
+  .text              ro code   0x800'3dce    0x60  usbd_ioreq.o [7]
+  .text              ro code   0x800'3e30    0xac  usbd_cdc_if.o [3]
+  .text              ro code   0x800'3edc    0x24  stm32f1xx_hal.o [6]
+  .text              ro code   0x800'3f00   0x1c0  stm32f1xx_hal_gpio.o [6]
+  .text              ro code   0x800'40c0     0x6  ABImemclr4.o [10]
+  .text              ro code   0x800'40c8   0x1e0  stm32f1xx_hal_tim.o [6]
+  .text              ro code   0x800'42a8    0x64  stm32f1xx_hal_tim_ex.o [6]
+  .text              ro code   0x800'430c    0x54  usb_device.o [3]
+  .text              ro code   0x800'4360    0x40  sprintf.o [8]
+  .text              ro code   0x800'43a0    0x28  stm32f1xx_hal.o [6]
+  .text              ro code   0x800'43c8   0x496  stm32f1xx_hal_rcc.o [6]
+  .text              ro code   0x800'4860    0xe8  stm32f1xx_hal_rcc_ex.o [6]
+  .text              ro code   0x800'4948   0x2c8  usbd_cdc.o [7]
+  .text              ro code   0x800'4c10    0x40  stm32f1xx_hal.o [6]
+  .text              ro code   0x800'4c50    0xa0  stm32f1xx_hal_msp.o [2]
+  .text              ro code   0x800'4cf0    0x32  ABImemset48.o [10]
+  .text              ro code   0x800'4d24     0xc  stm32f1xx_hal.o [6]
+  .text              ro code   0x800'4d30    0x14  memset.o [10]
+  .text              ro code   0x800'4d44    0x66  ABImemset.o [10]
+  .text              ro code   0x800'4dac   0x100  usbd_desc.o [3]
+  .text              ro code   0x800'4eac    0x78  lz77_init_single.o [10]
+  .text              ro code   0x800'4f24    0x38  zero_init3.o [10]
+  .text              ro code   0x800'4f5c    0x28  data_init.o [10]
+  .iar.init_table    const     0x800'4f84    0x20  - Linker created -
+  .text              ro code   0x800'4fa4    0x20  stm32f1xx_it.o [2]
+  .text              ro code   0x800'4fc4    0x10  stm32f1xx_hal.o [6]
+  .text              ro code   0x800'4fd4    0x1e  cmain.o [10]
+  .text              ro code   0x800'4ff2     0x4  low_level_init.o [8]
+  .text              ro code   0x800'4ff6     0x4  exit.o [8]
+  .text              ro code   0x800'4ffc     0xa  cexit.o [10]
+  .text              ro code   0x800'5008    0x1c  cstartup_M.o [10]
+  .text              ro code   0x800'5024    0x14  system_stm32f1xx.o [5]
+  .text              ro code   0x800'5038    0x10  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5048     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'504c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5050     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5054     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5058     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'505c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5060     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5064     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5068     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'506c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5070     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5074     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5078     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'507c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5080     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5084     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5088     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'508c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5090     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5094     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'5098     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'509c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50a0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50a4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50a8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50ac     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50b0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50b4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50b8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50bc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50c0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50c4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50c8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50cc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50d0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50d4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50d8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50dc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50e0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50e4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50e8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'50ec     0x4  startup_stm32f103xb.o [1]
+  .rodata            const     0x800'50f0     0x0  zero_init3.o [10]
+  .rodata            const     0x800'50f0     0x0  lz77_init_single.o [10]
+  Initializer bytes  const     0x800'50f0   0x100  <for P2-1>
+                             - 0x800'51f0  0x5104
+
+"P2", part 1 of 3:                          0x200
+  P2-1                        0x2000'0000   0x200  <Init block>
+    .data            inited   0x2000'0000     0xc  stm32f1xx_hal.o [6]
+    .data            inited   0x2000'000c     0x4  system_stm32f1xx.o [5]
+    .data            inited   0x2000'0010     0xc  usbd_cdc.o [7]
+    .data            inited   0x2000'001c    0x38  usbd_cdc.o [7]
+    .data            inited   0x2000'0054    0x44  usbd_cdc.o [7]
+    .data            inited   0x2000'0098    0x44  usbd_cdc.o [7]
+    .data            inited   0x2000'00dc    0x44  usbd_cdc.o [7]
+    .data            inited   0x2000'0120    0x10  usbd_cdc_if.o [3]
+    .data            inited   0x2000'0130    0x1c  usbd_desc.o [3]
+    .data            inited   0x2000'014c    0x14  usbd_desc.o [3]
+    .data            inited   0x2000'0160     0x4  usbd_desc.o [3]
+    .data            inited   0x2000'0164    0x1c  usbd_desc.o [3]
+    .data            inited   0x2000'0180    0x38  xlocale_c.o [8]
+    .data            inited   0x2000'01b8    0x48  xlocale_c.o [8]
+                            - 0x2000'0200   0x200
+
+"P2", part 2 of 3:                         0x1008
+  .bss               zero     0x2000'0200   0x7d0  usbd_cdc_if.o [3]
+  .bss               zero     0x2000'09d0   0x2ec  usbd_conf.o [4]
+  .bss               zero     0x2000'0cbc   0x2c4  usb_device.o [3]
+  .bss               zero     0x2000'0f80   0x120  usbd_conf.o [4]
+  .bss               zero     0x2000'10a0   0x100  usbd_desc.o [3]
+  .bss               zero     0x2000'11a0    0x60  main.o [2]
+  .bss               zero     0x2000'1200     0x4  xfail_s.o [8]
+  .bss               zero     0x2000'1204     0x1  usbd_cdc_if.o [3]
+  .bss               zero     0x2000'1205     0x1  usbd_ctlreq.o [7]
+                            - 0x2000'1206  0x1006
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'1208   0x400  <Block>
+    CSTACK           uninit   0x2000'1208   0x400  <Block tail>
+                            - 0x2000'1608   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'51f0   0x801'ffff  0x1'ae10
+  0x2000'1608  0x2000'4fff    0x39f8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1006:
+          0x2000'0200  0x1006
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x100 (50% of destination):
+           0x800'50f0   0x100
+    1 destination range, total size 0x200:
+          0x2000'0000   0x200
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\EWARM: [1]
+    startup_stm32f103xb.o       420
+    -------------------------------------------------
+    Total:                      420
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\Core: [2]
+    main.o                      586                96
+    stm32f1xx_hal_msp.o         160
+    stm32f1xx_it.o               32
+    -------------------------------------------------
+    Total:                      778                96
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\App: [3]
+    usb_device.o                 84               708
+    usbd_cdc_if.o               172        8    2'017
+    usbd_desc.o                 256       40      336
+    -------------------------------------------------
+    Total:                      512       48    3'061
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\Target: [4]
+    usbd_conf.o                 502             1'036
+    -------------------------------------------------
+    Total:                      502             1'036
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\CMSIS: [5]
+    system_stm32f1xx.o           20        2        4
+    -------------------------------------------------
+    Total:                       20        2        4
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver: [6]
+    stm32f1xx_hal.o             168        6       12
+    stm32f1xx_hal_cortex.o      196
+    stm32f1xx_hal_gpio.o        448
+    stm32f1xx_hal_pcd.o       2'554
+    stm32f1xx_hal_pcd_ex.o       52
+    stm32f1xx_hal_rcc.o       1'174
+    stm32f1xx_hal_rcc_ex.o      232
+    stm32f1xx_hal_tim.o         480
+    stm32f1xx_hal_tim_ex.o      100
+    stm32f1xx_ll_usb.o        2'536
+    -------------------------------------------------
+    Total:                    7'940        6       12
+
+C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library: [7]
+    usbd_cdc.o                  712      136      272
+    usbd_core.o                 636
+    usbd_ctlreq.o             1'118                 1
+    usbd_ioreq.o                 96
+    -------------------------------------------------
+    Total:                    2'562      136      273
+
+dl7M_tlf.a: [8]
+    abort.o                       6
+    exit.o                        4
+    low_level_init.o              4
+    sprintf.o                    64
+    xencoding_8859_1.o           30
+    xfail_s.o                    64                 4
+    xlocale_c.o                 124       69      128
+    xmbcurmax.o                  10
+    xprintffull.o             4'126
+    xsprout.o                    10
+    -------------------------------------------------
+    Total:                    4'442       69      132
+
+m7M_tl.a: [9]
+    DblAddSub.o                 590
+    DblCmpGe.o                   52
+    DblCmpLe.o                   52
+    DblDiv.o                    582
+    DblMul.o                    426
+    DblToS32.o                   54
+    DblToU32.o                   34
+    S32ToDbl.o                   34
+    U32ToDbl.o                   28
+    frexp.o                     112
+    ldexp.o                     314
+    -------------------------------------------------
+    Total:                    2'278
+
+rt7M_tl.a: [10]
+    ABImemclr4.o                  6
+    ABImemcpy_small.o            24
+    ABImemset.o                 102
+    ABImemset48.o                50
+    I64DivMod.o                 560
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 28
+    data_init.o                  40
+    lz77_init_single.o          120
+    memchr.o                     88
+    memset.o                     20
+    strchr.o                     22
+    strlen_small.o               20
+    zero_init3.o                 56
+    -------------------------------------------------
+    Total:                    1'178
+
+shb_l.a: [11]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         31
+    Linker created                        32    1'024
+-----------------------------------------------------
+    Grand Total:             20'683      293    5'638
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'4f84          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'4fa4          --   Gb  - Linker created -
+?main                    0x800'4fd5         Code  Gb  cmain.o [10]
+AHBPrescTable            0x800'5028   0x10  Data  Gb  system_stm32f1xx.o [5]
+BusFault_Handler         0x800'4fab    0x2  Code  Gb  stm32f1xx_it.o [2]
+CDC_Control_FS           0x800'3e53    0x4  Code  Lc  usbd_cdc_if.o [3]
+CDC_DeInit_FS            0x800'3e4f    0x4  Code  Lc  usbd_cdc_if.o [3]
+CDC_Init_FS              0x800'3e31   0x1e  Code  Lc  usbd_cdc_if.o [3]
+CDC_Receive_FS           0x800'3e57   0x16  Code  Lc  usbd_cdc_if.o [3]
+CDC_Transmit_FS          0x800'3e6d   0x58  Code  Gb  usbd_cdc_if.o [3]
+CSTACK$$Base            0x2000'1208          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1608          --   Gb  - Linker created -
+CacheMore                0x800'112d   0x28  Code  Lc  xlocale_c.o [8]
+DebugMon_Handler         0x800'4fb1    0x2  Code  Gb  stm32f1xx_it.o [2]
+Error_Handler            0x800'3937    0x4  Code  Gb  main.o [2]
+FS_Desc                 0x2000'0130   0x1c  Data  Gb  usbd_desc.o [3]
+HAL_Delay                0x800'43a1   0x28  Code  Gb  stm32f1xx_hal.o [6]
+HAL_GPIO_Init            0x800'3f01  0x180  Code  Gb  stm32f1xx_hal_gpio.o [6]
+HAL_GPIO_ReadPin         0x800'4081    0xc  Code  Gb  stm32f1xx_hal_gpio.o [6]
+HAL_GetTick              0x800'4d25    0xc  Code  Gb  stm32f1xx_hal.o [6]
+HAL_IncTick              0x800'4fc5   0x10  Code  Gb  stm32f1xx_hal.o [6]
+HAL_Init                 0x800'3edd   0x20  Code  Gb  stm32f1xx_hal.o [6]
+HAL_InitTick             0x800'4c11   0x40  Code  Gb  stm32f1xx_hal.o [6]
+HAL_MspInit              0x800'4c51   0x3a  Code  Gb  stm32f1xx_hal_msp.o [2]
+HAL_NVIC_EnableIRQ       0x800'341f   0x16  Code  Gb  stm32f1xx_hal_cortex.o [6]
+HAL_NVIC_SetPriority     0x800'33e5   0x3a  Code  Gb  stm32f1xx_hal_cortex.o [6]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'33cb   0x1a  Code  Gb  stm32f1xx_hal_cortex.o [6]
+HAL_PCDEx_PMAConfig      0x800'393b   0x34  Code  Gb  stm32f1xx_hal_pcd_ex.o [6]
+HAL_PCDEx_SetConnectionState
+                         0x800'29b3    0x2  Code  Gb  usbd_conf.o [4]
+HAL_PCD_DataInStageCallback
+                         0x800'2825   0x12  Code  Gb  usbd_conf.o [4]
+HAL_PCD_DataOutStageCallback
+                         0x800'2811   0x14  Code  Gb  usbd_conf.o [4]
+HAL_PCD_EP_Close         0x800'267d   0x1c  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_ClrStall      0x800'2767   0x2e  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_GetRxCount    0x800'26bd   0x10  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_Open          0x800'2627   0x56  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_Receive       0x800'2699   0x24  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_SetStall      0x800'2701   0x5e  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_EP_Transmit      0x800'26cd   0x2a  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_IRQHandler       0x800'1eb9  0x5de  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_Init             0x800'1dd5   0xac  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_MspInit          0x800'27d1   0x34  Code  Gb  usbd_conf.o [4]
+HAL_PCD_ResetCallback    0x800'283f   0x24  Code  Gb  usbd_conf.o [4]
+HAL_PCD_ResumeCallback   0x800'287f    0x8  Code  Gb  usbd_conf.o [4]
+HAL_PCD_SOFCallback      0x800'2837    0x8  Code  Gb  usbd_conf.o [4]
+HAL_PCD_SetAddress       0x800'260b   0x1c  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_SetupStageCallback
+                         0x800'2805    0xc  Code  Gb  usbd_conf.o [4]
+HAL_PCD_Start            0x800'1e99   0x18  Code  Gb  stm32f1xx_hal_pcd.o [6]
+HAL_PCD_SuspendCallback
+                         0x800'2863   0x1c  Code  Gb  usbd_conf.o [4]
+HAL_RCCEx_PeriphCLKConfig
+                         0x800'4861   0xda  Code  Gb  stm32f1xx_hal_rcc_ex.o [6]
+HAL_RCC_ClockConfig      0x800'46dd   0xf4  Code  Gb  stm32f1xx_hal_rcc.o [6]
+HAL_RCC_GetSysClockFreq
+                         0x800'47e5   0x3a  Code  Gb  stm32f1xx_hal_rcc.o [6]
+HAL_RCC_GetSysClockFreq::aPLLMULFactorTable
+                         0x800'484c   0x10  Data  Lc  stm32f1xx_hal_rcc.o [6]
+HAL_RCC_GetSysClockFreq::aPredivFactorTable
+                         0x800'485c    0x2  Data  Lc  stm32f1xx_hal_rcc.o [6]
+HAL_RCC_OscConfig        0x800'43c9  0x30c  Code  Gb  stm32f1xx_hal_rcc.o [6]
+HAL_SYSTICK_Config       0x800'3435   0x28  Code  Gb  stm32f1xx_hal_cortex.o [6]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x800'42a9   0x56  Code  Gb  stm32f1xx_hal_tim_ex.o [6]
+HAL_TIM_Encoder_Init     0x800'40e5   0x96  Code  Gb  stm32f1xx_hal_tim.o [6]
+HAL_TIM_Encoder_MspInit
+                         0x800'4c8b   0x56  Code  Gb  stm32f1xx_hal_msp.o [2]
+HAL_TIM_Encoder_Start    0x800'417d   0x62  Code  Gb  stm32f1xx_hal_tim.o [6]
+HardFault_Handler        0x800'4fa7    0x2  Code  Gb  stm32f1xx_it.o [2]
+IntToUnicode             0x800'4e3d   0x26  Code  Lc  usbd_desc.o [3]
+MX_USB_DEVICE_Init       0x800'430d   0x54  Code  Gb  usb_device.o [3]
+MemManage_Handler        0x800'4fa9    0x2  Code  Gb  stm32f1xx_it.o [2]
+NMI_Handler              0x800'4fa5    0x2  Code  Gb  stm32f1xx_it.o [2]
+PendSV_Handler           0x800'4fb3    0x2  Code  Gb  stm32f1xx_it.o [2]
+Region$$Table$$Base      0x800'4f84          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'4fa4          --   Gb  - Linker created -
+SVC_Handler              0x800'4faf    0x2  Code  Gb  stm32f1xx_it.o [2]
+SysTick_Handler          0x800'4fb5    0x4  Code  Gb  stm32f1xx_it.o [2]
+SystemClock_Config       0x800'38b1   0x78  Code  Gb  main.o [2]
+SystemCoreClock         0x2000'000c    0x4  Data  Gb  system_stm32f1xx.o [5]
+SystemInit               0x800'5025    0x2  Code  Gb  system_stm32f1xx.o [5]
+TIM_Base_SetConfig       0x800'421d   0x5e  Code  Gb  stm32f1xx_hal_tim.o [6]
+TIM_CCxChannelCmd        0x800'428d   0x16  Code  Gb  stm32f1xx_hal_tim.o [6]
+TX_Buff                 0x2000'11f4    0xc  Data  Gb  main.o [2]
+USBD_CDC                0x2000'001c   0x38  Data  Gb  usbd_cdc.o [7]
+USBD_CDC_CfgFSDesc      0x2000'0098   0x44  Data  Gb  usbd_cdc.o [7]
+USBD_CDC_CfgHSDesc      0x2000'0054   0x44  Data  Gb  usbd_cdc.o [7]
+USBD_CDC_DataIn          0x800'4ac5   0x4a  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_DataOut         0x800'4b0f   0x2a  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_DeInit          0x800'49d9   0x44  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_DeviceQualifierDesc
+                        0x2000'0010    0xc  Data  Lc  usbd_cdc.o [7]
+USBD_CDC_EP0_RxReady     0x800'4b39   0x26  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_GetDeviceQualifierDescriptor
+                         0x800'4b77    0x8  Code  Gb  usbd_cdc.o [7]
+USBD_CDC_GetFSCfgDesc    0x800'4b5f    0x8  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_GetHSCfgDesc    0x800'4b67    0x8  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_GetOtherSpeedCfgDesc
+                         0x800'4b6f    0x8  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_Init            0x800'4949   0x86  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_OtherSpeedCfgDesc
+                        0x2000'00dc   0x44  Data  Gb  usbd_cdc.o [7]
+USBD_CDC_ReceivePacket   0x800'4beb   0x26  Code  Gb  usbd_cdc.o [7]
+USBD_CDC_RegisterInterface
+                         0x800'4b91    0xe  Code  Gb  usbd_cdc.o [7]
+USBD_CDC_SetRxBuffer     0x800'4baf    0xc  Code  Gb  usbd_cdc.o [7]
+USBD_CDC_SetTxBuffer     0x800'4b9f   0x10  Code  Gb  usbd_cdc.o [7]
+USBD_CDC_Setup           0x800'4a1d   0xa8  Code  Lc  usbd_cdc.o [7]
+USBD_CDC_TransmitPacket
+                         0x800'4bbb   0x30  Code  Gb  usbd_cdc.o [7]
+USBD_ClrClassConfig      0x800'34cb    0xa  Code  Gb  usbd_core.o [7]
+USBD_CtlContinueRx       0x800'3e03    0x4  Code  Gb  usbd_ioreq.o [7]
+USBD_CtlContinueSendData
+                         0x800'3ddf    0x4  Code  Gb  usbd_ioreq.o [7]
+USBD_CtlError            0x800'3d73   0x16  Code  Gb  usbd_ctlreq.o [7]
+USBD_CtlPrepareRx        0x800'3def   0x14  Code  Gb  usbd_ioreq.o [7]
+USBD_CtlReceiveStatus    0x800'3e21    0xe  Code  Gb  usbd_ioreq.o [7]
+USBD_CtlSendData         0x800'3dcf   0x10  Code  Gb  usbd_ioreq.o [7]
+USBD_CtlSendStatus       0x800'3e13    0xe  Code  Gb  usbd_ioreq.o [7]
+USBD_FS_ConfigStrDescriptor
+                         0x800'4e09    0xc  Code  Gb  usbd_desc.o [3]
+USBD_FS_DeviceDesc      0x2000'014c   0x14  Data  Gb  usbd_desc.o [3]
+USBD_FS_DeviceDescriptor
+                         0x800'4dad    0x8  Code  Gb  usbd_desc.o [3]
+USBD_FS_InterfaceStrDescriptor
+                         0x800'4e31    0xc  Code  Gb  usbd_desc.o [3]
+USBD_FS_LangIDStrDescriptor
+                         0x800'4db5    0x8  Code  Gb  usbd_desc.o [3]
+USBD_FS_ManufacturerStrDescriptor
+                         0x800'4dc9    0xa  Code  Gb  usbd_desc.o [3]
+USBD_FS_ProductStrDescriptor
+                         0x800'4dbd    0xc  Code  Gb  usbd_desc.o [3]
+USBD_FS_SerialStrDescriptor
+                         0x800'4ddd   0x2c  Code  Gb  usbd_desc.o [3]
+USBD_GetString           0x800'3d89   0x46  Code  Gb  usbd_ctlreq.o [7]
+USBD_Get_USB_Status      0x800'29b5   0x12  Code  Lc  usbd_conf.o [4]
+USBD_Init                0x800'3475   0x26  Code  Gb  usbd_core.o [7]
+USBD_Interface_fops_FS  0x2000'0120   0x10  Data  Gb  usbd_cdc_if.o [3]
+USBD_LL_ClearStallEP     0x800'293f    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LL_CloseEP          0x800'2927    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LL_DataInStage      0x800'35ab   0xae  Code  Gb  usbd_core.o [7]
+USBD_LL_DataOutStage     0x800'3529   0x7a  Code  Gb  usbd_core.o [7]
+USBD_LL_GetRxDataSize    0x800'298d    0x8  Code  Gb  usbd_conf.o [4]
+USBD_LL_Init             0x800'2887   0x7a  Code  Gb  usbd_conf.o [4]
+USBD_LL_IsStallEP        0x800'294b   0x1e  Code  Gb  usbd_conf.o [4]
+USBD_LL_OpenEP           0x800'2911   0x16  Code  Gb  usbd_conf.o [4]
+USBD_LL_PrepareReceive   0x800'2981    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LL_Reset            0x800'3659   0x52  Code  Gb  usbd_core.o [7]
+USBD_LL_Resume           0x800'36c1   0x12  Code  Gb  usbd_core.o [7]
+USBD_LL_SOF              0x800'36d3   0x18  Code  Gb  usbd_core.o [7]
+USBD_LL_SetSpeed         0x800'36ab    0x6  Code  Gb  usbd_core.o [7]
+USBD_LL_SetUSBAddress    0x800'2969    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LL_SetupStage       0x800'34d5   0x54  Code  Gb  usbd_core.o [7]
+USBD_LL_StallEP          0x800'2933    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LL_Start            0x800'2901    0xa  Code  Gb  usbd_conf.o [4]
+USBD_LL_Suspend          0x800'36b1   0x10  Code  Gb  usbd_core.o [7]
+USBD_LL_Transmit         0x800'2975    0xc  Code  Gb  usbd_conf.o [4]
+USBD_LangIDDesc         0x2000'0160    0x4  Data  Gb  usbd_desc.o [3]
+USBD_ParseSetupRequest   0x800'3d4b   0x28  Code  Gb  usbd_ctlreq.o [7]
+USBD_RegisterClass       0x800'349b   0x10  Code  Gb  usbd_core.o [7]
+USBD_SetClassConfig      0x800'34b5   0x16  Code  Gb  usbd_core.o [7]
+USBD_SetConfig::cfgidx  0x2000'1205    0x1  Data  Lc  usbd_ctlreq.o [7]
+USBD_Start               0x800'34ab    0xa  Code  Gb  usbd_core.o [7]
+USBD_StdDevReq           0x800'3971  0x268  Code  Gb  usbd_ctlreq.o [7]
+USBD_StdEPReq            0x800'3c29  0x11a  Code  Gb  usbd_ctlreq.o [7]
+USBD_StdItfReq           0x800'3bdd   0x4c  Code  Gb  usbd_ctlreq.o [7]
+USBD_StrDesc            0x2000'10a0  0x100  Data  Gb  usbd_desc.o [3]
+USBD_StringSerial       0x2000'0164   0x1c  Data  Gb  usbd_desc.o [3]
+USBD_static_free         0x800'29b1    0x2  Code  Gb  usbd_conf.o [4]
+USBD_static_malloc       0x800'2995    0x4  Code  Gb  usbd_conf.o [4]
+USBD_static_malloc::mem
+                        0x2000'0f80  0x120  Data  Lc  usbd_conf.o [4]
+USB_ActivateEndpoint     0x800'2a05  0x1ec  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_CoreInit             0x800'29c9    0x4  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_DeactivateEndpoint   0x800'2c2d  0x10c  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_DevConnect           0x800'3349    0x4  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_DevDisconnect        0x800'334d    0x4  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_DevInit              0x800'29ed   0x10  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_DisableGlobalInt     0x800'29dd    0xc  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_EP0_OutStart         0x800'3357    0x4  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_EPClearStall         0x800'32c3   0x7a  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_EPSetStall           0x800'3291   0x32  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_EPStartXfer          0x800'2d39  0x470  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_EnableGlobalInt      0x800'29cd   0x10  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_LP_CAN1_RX0_IRQHandler
+                         0x800'4fb9    0x6  Code  Gb  stm32f1xx_it.o [2]
+USB_ReadInterrupts       0x800'3351    0x6  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_ReadPMA              0x800'3389   0x28  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_SetCurrentMode       0x800'29e9    0x4  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_SetDevAddress        0x800'333d    0xc  Code  Gb  stm32f1xx_ll_usb.o [6]
+USB_WritePMA             0x800'3365   0x24  Code  Gb  stm32f1xx_ll_usb.o [6]
+UsageFault_Handler       0x800'4fad    0x2  Code  Gb  stm32f1xx_it.o [2]
+UserRxBufferFS          0x2000'0200  0x3e8  Data  Gb  usbd_cdc_if.o [3]
+UserTxBufferFS          0x2000'05e8  0x3e8  Data  Gb  usbd_cdc_if.o [3]
+_Encoding_8859_1_Mbrlen
+                         0x800'111d    0x2  Code  Gb  xencoding_8859_1.o [8]
+_Encoding_8859_1_Wctomb
+                         0x800'110b   0x12  Code  Gb  xencoding_8859_1.o [8]
+_LitobFull               0x800'0f4f  0x10c  Code  Lc  xprintffull.o [8]
+_Locale_lconv           0x2000'0180   0x38  Data  Lc  xlocale_c.o [8]
+_PrintfFull              0x800'00ed  0xc2a  Code  Gb  xprintffull.o [8]
+_PutcharsFull            0x800'10b1   0x2e  Code  Lc  xprintffull.o [8]
+_PutstrFull              0x800'0e8f   0xc0  Code  Lc  xprintffull.o [8]
+_PuttxtFull              0x800'0d83  0x10c  Code  Lc  xprintffull.o [8]
+_SProut                  0x800'11bb    0xa  Code  Gb  xsprout.o [8]
+__NVIC_SetPriority       0x800'33b1   0x1a  Code  Lc  stm32f1xx_hal_cortex.o [6]
+__aeabi_cdcmple          0x800'12f9         Code  Gb  DblCmpLe.o [9]
+__aeabi_cdrcmple         0x800'132d         Code  Gb  DblCmpGe.o [9]
+__aeabi_d2iz             0x800'149d         Code  Gb  DblToS32.o [9]
+__aeabi_d2uiz            0x800'1991         Code  Gb  DblToU32.o [9]
+__aeabi_ddiv             0x800'1749         Code  Gb  DblDiv.o [9]
+__aeabi_dmul             0x800'19d1         Code  Gb  DblMul.o [9]
+__aeabi_dsub             0x800'1665         Code  Gb  DblAddSub.o [9]
+__aeabi_i2d              0x800'14d5         Code  Gb  S32ToDbl.o [9]
+__aeabi_ldiv0            0x800'1dbd         Code  Gb  I64DivZer.o [10]
+__aeabi_memclr4          0x800'40c1         Code  Gb  ABImemclr4.o [10]
+__aeabi_memset           0x800'4d45         Code  Gb  ABImemset.o [10]
+__aeabi_ui2d             0x800'19b5         Code  Gb  U32ToDbl.o [9]
+__aeabi_uldivmod         0x800'1b85         Code  Gb  I64DivMod.o [10]
+__cmain                  0x800'4fd5         Code  Gb  cmain.o [10]
+__exit                   0x800'1dc1   0x14  Code  Gb  exit.o [11]
+__iar_Fail_s             0x800'11c5   0x1c  Code  Gb  xfail_s.o [8]
+__iar_Mbcurmax           0x800'1b7b    0xa  Code  Gb  xmbcurmax.o [8]
+__iar_Memchr             0x800'1219         Code  Gb  memchr.o [10]
+__iar_Memset             0x800'4d45         Code  Gb  ABImemset.o [10]
+__iar_Memset4_word       0x800'4cf1         Code  Gb  ABImemset48.o [10]
+__iar_Memset8_word       0x800'4cf1         Code  Gb  ABImemset48.o [10]
+__iar_Memset_word        0x800'4d4d         Code  Gb  ABImemset.o [10]
+__iar_Strchr             0x800'11a5         Code  Gb  strchr.o [10]
+__iar_data_init3         0x800'4f5d   0x28  Code  Gb  data_init.o [10]
+__iar_frexp              0x800'1295         Code  Gb  frexp.o [9]
+__iar_frexp64            0x800'1289         Code  Gb  frexp.o [9]
+__iar_frexpl             0x800'1295         Code  Gb  frexp.o [9]
+__iar_globLocale        0x2000'01b8   0x48  Data  Lc  xlocale_c.o [8]
+__iar_global_Locale      0x800'1129    0x4  Code  Gb  xlocale_c.o [8]
+__iar_ldexp64            0x800'1361         Code  Gb  ldexp.o [9]
+__iar_lz77_init_single3
+                         0x800'4ead   0x78  Code  Gb  lz77_init_single.o [10]
+__iar_program_start      0x800'5009         Code  Gb  cstartup_M.o [10]
+__iar_scalbln64          0x800'1361         Code  Gb  ldexp.o [9]
+__iar_scalbn64           0x800'1361         Code  Gb  ldexp.o [9]
+__iar_small_Memcpy       0x800'1275         Code  Gb  ABImemcpy_small.o [10]
+__iar_small_memcpy       0x800'1271         Code  Gb  ABImemcpy_small.o [10]
+__iar_small_memcpy4      0x800'1271         Code  Gb  ABImemcpy_small.o [10]
+__iar_small_memcpy8      0x800'1271         Code  Gb  ABImemcpy_small.o [10]
+__iar_small_strlen       0x800'1205         Code  Gb  strlen_small.o [10]
+__iar_zero_init3         0x800'4f25   0x38  Code  Gb  zero_init3.o [10]
+__low_level_init         0x800'4ff3    0x4  Code  Gb  low_level_init.o [8]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f103xb.o [1]
+_call_main               0x800'4fe1         Code  Gb  cmain.o [10]
+_exit                    0x800'4ffd         Code  Gb  cexit.o [10]
+_gLocale_mblen           0x800'1191    0x4  Code  Gb  xlocale_c.o [8]
+_gLocale_mblenInt        0x800'1155   0x2c  Code  Gb  xlocale_c.o [8]
+_gLocale_wctomb          0x800'1195    0x4  Code  Gb  xlocale_c.o [8]
+_gLocale_wctombInt       0x800'118d    0x4  Code  Gb  xlocale_c.o [8]
+abort                    0x800'1db5    0x6  Code  Gb  abort.o [8]
+count                   0x2000'11a0    0x2  Data  Gb  main.o [2]
+exit                     0x800'4ff7    0x4  Code  Gb  exit.o [8]
+flag                    0x2000'1204    0x1  Data  Gb  usbd_cdc_if.o [3]
+frexp                    0x800'1289         Code  Gb  frexp.o [9]
+frexpl                   0x800'1289         Code  Gb  frexp.o [9]
+hUsbDeviceFS            0x2000'0cbc  0x2c4  Data  Gb  usb_device.o [3]
+hpcd_USB_FS             0x2000'09d0  0x2ec  Data  Gb  usbd_conf.o [4]
+htim4                   0x2000'11a4   0x48  Data  Gb  main.o [2]
+ldexp                    0x800'1361         Code  Gb  ldexp.o [9]
+ldexpl                   0x800'1361         Code  Gb  ldexp.o [9]
+localeconv               0x800'1199    0x4  Code  Gb  xlocale_c.o [8]
+main                     0x800'3745  0x146  Code  Gb  main.o [2]
+memchr                   0x800'1219         Code  Gb  memchr.o [10]
+memset                   0x800'4d31   0x14  Code  Gb  memset.o [10]
+multipler               0x2000'11f0    0x4  Data  Gb  main.o [2]
+res                     0x2000'11ec    0x4  Data  Gb  main.o [2]
+scalbln                  0x800'1361         Code  Gb  ldexp.o [9]
+scalblnl                 0x800'1361         Code  Gb  ldexp.o [9]
+scalbn                   0x800'1361         Code  Gb  ldexp.o [9]
+scalbnl                  0x800'1361         Code  Gb  ldexp.o [9]
+scale                    0x800'105b   0x46  Code  Lc  xprintffull.o [8]
+sec_hand                0x2000'1200    0x4  Data  Lc  xfail_s.o [8]
+sprintf                  0x800'4361   0x40  Code  Gb  sprintf.o [8]
+strchr                   0x800'11a5         Code  Gb  strchr.o [10]
+transmit                 0x800'36f1   0x4a  Code  Gb  main.o [2]
+uwTick                  0x2000'0004    0x4  Data  Gb  stm32f1xx_hal.o [6]
+uwTickFreq              0x2000'0000    0x1  Data  Gb  stm32f1xx_hal.o [6]
+uwTickPrio              0x2000'0008    0x4  Data  Gb  stm32f1xx_hal.o [6]
+
+
+[1] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\EWARM
+[2] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\Core
+[3] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\App
+[4] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Application\User\USB_DEVICE\Target
+[5] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\CMSIS
+[6] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Drivers\STM32F1xx_HAL_Driver
+[7] = C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\Enc_F103\Obj\Middlewares\USB_Device_Library
+[8] = dl7M_tlf.a
+[9] = m7M_tl.a
+[10] = rt7M_tl.a
+[11] = shb_l.a
+
+  20'683 bytes of readonly  code memory
+     293 bytes of readonly  data memory
+   5'638 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
