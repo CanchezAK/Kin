@@ -128,20 +128,41 @@ int main(void)
   if (fres != FR_OK)
   {
     ILI9486_WriteText(50, 50, "Can't mount SD card!!!", Times_New_Roman16x16, 16, 0xFFFF, (3<<6));
+    HAL_Delay(500);
   }
-  fres = f_open(&fil, "1.txt", FA_READ);        //Init SD card and open file "1.txt" in read-only mode
+  fres = f_open(&fil, "1.txt", FA_OPEN_ALWAYS|FA_WRITE);        //Init SD card and open file "1.txt" in RW mode
   if (fres != FR_OK)
   {
-    ILI9486_WriteText(50,50, "Can't open file!!!", Times_New_Roman16x16, 16, 0xFFFF, (3<<6));
+    ILI9486_WriteTestText(50,50, "Can't open file!!!",  (unsigned char*)&Font, 0xFFFF, (3<<6));
+    HAL_Delay(500);
   }
+  //fres = f_lseek(&fil, 0);
+  uint32_t bytes = 0;
+  fres = f_write(&fil, "It's test data, ignore that.", 28, (UINT*)bytes);
+  f_sync(&fil);
+  if (fres != FR_OK)
+  {
+    ILI9486_WriteTestText(50,50, "Can't write file!!!",  (unsigned char*)&Font, 0xFFFF, (3<<6));
+    HAL_Delay(500);
+  }
+  f_close(&fil);
+  f_mount(NULL, "", 0);
+  HAL_Delay(500);
+  f_mount(&FatFs, "", 1);
+  f_open(&fil, "1.txt", FA_OPEN_ALWAYS|FA_READ);
   BYTE ReadBuff[100];   //Buffer for info from file
   TCHAR* rres = f_gets((TCHAR*)ReadBuff, 30, &fil);     //Reading info in buffer
   if (rres == 0)
   {
-    ILI9486_WriteText(50,50, "Can't read file!!!", Times_New_Roman16x16, 16, 0xFFFF, (3<<6));
+    ILI9486_WriteTestText(50,50, "Can't read file!!!",  (unsigned char*)&Font, 0xFFFF, (3<<6));
+    HAL_Delay(500);
   }
   f_close(&fil);        //Close file. WARNING! Do not forget about this, if you don't close it, you will have an error in f_open!
   f_mount(NULL, "", 0); //Unmounting drive, needed for have opportunity to have an operation in SD card in other places in program
+  ILI9486_Fill(0, 0, 479, 319, 255, 0, 0);
+  uint8_t ilibuff[] = {0};
+  sprintf(ilibuff, ReadBuff);
+  ILI9486_WriteTestText(16,50, (char*)ilibuff, (unsigned char*)&Font, 0xFFFF, (3<<6));
   HAL_Delay(5000);      //Debug point, you can delete this
   /* USER CODE END 2 */
 
@@ -159,19 +180,19 @@ int main(void)
           ILI9486_Fill(200, 200, 216, 232, 255, 0, 0); // If you want to clear write area, use this construction
           is_button_prev = is_button;
         }**/
-        ILI9486_WriteText(200,200,"F1", Times_New_Roman16x16, 16, 0xFFFF, (3<<0x06));
+        ILI9486_WriteTestText(200,200,"F1", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
       }
       else if (is_button == 'G')
       {
-        ILI9486_WriteText(200,200,"F2", Times_New_Roman16x16, 16, 0xFFFF, (3<<0x06));
+        ILI9486_WriteTestText(200,200,"F2", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
       }
       else if (is_button == 'v')
       {
-        ILI9486_WriteText(200,200,"V", Times_New_Roman16x16, 16, 0xFFFF, (3<<0x06));
+        ILI9486_WriteTestText(200,200,"V", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
       }
       else
       {
-        ILI9486_WriteText(200,200, (char*)&is_button, Times_New_Roman16x16, 16, 0xFFFF, (3<<0x06));
+        ILI9486_WriteTestText(200,200, (char*)&is_button, (unsigned char*)&Font, 0xFFFF, (3<<0x06));
       }
     }
     //Display test's
@@ -186,7 +207,7 @@ int main(void)
     void ILI9486_Init()
     Initialisation display, you can seen more in https://datasheetspdf.com/pdf-down/I/L/I/ILI9486-ILITEK.pdf
 
-    void ILI9486_WriteText(uint16_t ix, uint16_t iy, char* iString, unsigned char* font, uint8_t font_size, unsigned short font_color, unsigned short back_color)
+    void ILI9486_WriteTestText(uint16_t ix, uint16_t iy, char* iString, unsigned char* font, unsigned short font_color, unsigned short back_color)
     Writting text from x, y coords, from string, for selected font (font's in fonts.h), font size is constant from fonts.h, you must write it for evryone font, font color set's in HEX, from 0x00 to 0xFF, back color too.
 
     void ILI9486_DrawPixel(unsigned int x, unsigned int y, unsigned char R, unsigned char G, unsigned char B)
@@ -201,11 +222,19 @@ int main(void)
     void ILI9486_DrawCircle(unsigned int xc, unsigned int yc, unsigned int r, unsigned char R, unsigned char G, unsigned char B)
     Not tested function for drawing circle, maybe, worked, maybe, not, need testing.
     **/
+    //ILI9486_DrawTestChar(200, 300, 'E', 0xFFFF, 0x0000);
+      ILI9486_WriteTestText(100, 300, "Test STRING/Ñòðîêà", (unsigned char*)&Font, 0xFFFF, 0x0000);
+    ILI9486_DrawCircle(50, 50, 20, 0, 255, 0);
     ILI9486_DrawThickLine(50, 100, 1, 2, 5, LINE_THICKNESS_MIDDLE, 255, 255, 255);
-    ILI9486_WriteText(5,15,"ÀÁÂÃÄÅÆÇÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÝÞßàáâãäåæçèêëìíîïðñòóôõö÷øùüúýþÿ", Verdana14x14rus, 14, 0xFFFF, (3<<0x06));
+    /**
+    Font's may be generated with errors, use GLCD Font Creator for create new font's (instruction on http://we.easyelectronics.ru/lcd_gfx/shrifty-s-glcd-font-creator-na-kolenke.html)
+    **/
+    ILI9486_WriteTestText(15,50,"ÀÁÂÃÄÅÆÇÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÝÞß", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
+    //ILI9486_WriteText(5,15,"àáâ", Verdana14x14rus, 14, 0xFFFF, (3<<0x06));
+    ILI9486_WriteTestText(15,31,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
     for (uint16_t x = 0; x < 465; x++)
     {
-      ILI9486_WriteText(x, 305, "à", Verdana14x14rus, 14, 0xFFFF, (31<<0x0B));
+      ILI9486_WriteTestText(x, 305, "à", (unsigned char*)&Font, 0xFFFF, (31<<0x0B));
     }
     for (uint8_t i = 0; i < 255; i++)
     {

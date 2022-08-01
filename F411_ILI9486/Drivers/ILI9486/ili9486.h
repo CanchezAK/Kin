@@ -36,3 +36,6 @@ void ILI9486_DrawPixel(unsigned int x, unsigned int y, unsigned char R, unsigned
 void ILI9486_SetWindow(unsigned short x, unsigned short y, unsigned short x1, unsigned short y1);
 void ILI9486_WriteText(uint16_t ix, uint16_t iy, char* iString, unsigned char* font, uint8_t font_size, unsigned short font_color, unsigned short back_color);
 void ILI9486_Fill(unsigned short xk1, unsigned short yk1, unsigned short xk2, unsigned short yk2, unsigned char r1, unsigned char g1, unsigned char b1);
+
+void ILI9486_DrawTestChar(uint16_t x, uint16_t y, char c, unsigned char* Font, uint16_t TextColor, uint16_t BGColor);
+void ILI9486_WriteTestText(uint16_t x, uint16_t y, char *str, unsigned char* Font, uint16_t TextColor, uint16_t BGColor);

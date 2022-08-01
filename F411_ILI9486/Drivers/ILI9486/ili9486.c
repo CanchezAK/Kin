@@ -225,7 +225,7 @@ void ILI9486_WriteText(uint16_t ix, uint16_t iy, char* iString, unsigned char* f
     {
         uint8_t sm = iString[sym];
         uint8_t snum = (sm<0xC0 ? sm-0x20 : sm-0xC0);
-        const uint8_t* symbol = &font[font_size<=16 ? (font_size*2+1)*(snum) : (font_size*3+1)*(snum)];
+        const uint8_t* symbol = &font[(font_size*2+1)*(snum)];
         for(uint16_t x = 0; x<=symbol[0]; ++x)
         {
             for(uint16_t y = 0; y<font_size; ++y)
@@ -235,12 +235,14 @@ void ILI9486_WriteText(uint16_t ix, uint16_t iy, char* iString, unsigned char* f
                    ILI9486_SetWindow(xpos+x, iy+y, (xpos+x)+1, (iy+y)+1);
                    ILI9486_WriteComD(0x2c);
                    ILI9486_WriteData(font_color);
+                   //HAL_Delay(5);
                 }
                 else
                 {
                    ILI9486_SetWindow(xpos+x, iy+y, (xpos+x)+1, (iy+y)+1);
                    ILI9486_WriteComD(0x2c);
                    ILI9486_WriteData(back_color);
+                   //HAL_Delay(5);
                 }
             }
         }
@@ -250,10 +252,10 @@ void ILI9486_WriteText(uint16_t ix, uint16_t iy, char* iString, unsigned char* f
 
 void ILI9486_DrawPixel(unsigned int x, unsigned int y, unsigned char R, unsigned char G, unsigned char B)
 {
-  unsigned char r = map(R, 0, 255, 0, 3);
-  unsigned char g = map(G, 0, 255, 0, 6);
-  unsigned char b = map(B, 0, 255, 0, 3);
-  unsigned short color = (r<<0x06)|(g<<3)|b;
+  unsigned char r = map(R, 0, 255, 0, 7);
+  unsigned char g = map(G, 0, 255, 0, 3);
+  unsigned char b = map(B, 0, 255, 0, 7);
+  unsigned short color = (r<<0x0D)|(r<<0x05)|(g<<0x0B)|(g<<0x03)|(b<<8)|b;//(r<<0x06)|(g<<3)|b;
   ILI9486_SetWindow(x, y, x+1, y+1);
   ILI9486_WriteComD(0x2c);
   ILI9486_WriteData(color);
@@ -532,4 +534,65 @@ void ILI9486_DrawRect(unsigned int x, unsigned int y, unsigned int w, unsigned i
   ILI9486_DrawThickLine(x, y, x, h, thickness, LINE_THICKNESS_MIDDLE, R, G, B);
   ILI9486_DrawThickLine(x, (y+x), w, (y+x), thickness, LINE_THICKNESS_MIDDLE, R, G, B);
   ILI9486_DrawThickLine((x+y), y, (x+y), h, thickness, LINE_THICKNESS_MIDDLE, R, G, B);
+}
+
+void ILI9486_DrawTestChar(uint16_t x, uint16_t y, char c, unsigned char* Font, uint16_t TextColor, uint16_t BGColor)
+{
+  uint8_t i, ys;
+  uint8_t buffer[36];
+  
+  memcpy(buffer, &Font[((c-32)*38)+5], 38);
+  
+  for(ys = 0; ys < 18; ys++)
+  {
+    for(i = 0; i < 8; i++)
+    {
+      if ((buffer[(ys*2)+1] & (1<<i)) == 0)
+      {
+        ILI9486_DrawPixel(x+i, y+ys, 255, 0, 0);
+      }
+      else ILI9486_DrawPixel(x+i, y+ys, 255, 255, 255);
+      
+      if ((buffer[(ys*2)] & (1<<i)) == 0)
+      {
+        ILI9486_DrawPixel(x+i-8, y+ys, 255, 0, 0);
+      }
+      else ILI9486_DrawPixel(x+i-8, y+ys, 255, 255, 255);
+    }
+  }
+}
+
+void ILI9486_WriteTestText(uint16_t x, uint16_t y, char *str, unsigned char* Font, uint16_t TextColor, uint16_t BGColor)
+{
+  while(*str)
+    {
+        if(x + 16 >= HEIGHT)
+        {
+            x = 0;
+            y += 19;
+
+            if(y + 19 >= WIDTH)
+            {
+                break;
+            }
+
+            if(*str == ' ')
+            {
+                str++;
+                continue;
+            }
+        }
+
+        ILI9486_DrawTestChar(x, y, *str, Font, TextColor, BGColor);
+        x += 16;
+        str++;
+  /*uint8_t type = *str;
+  if (type >=128) x = x - 3;
+  while(*str)
+  {
+    ILI9486_DrawTestChar(x+(type * 16), y, *str++, TextColor, BGColor);
+    type = *str;
+    if (type >=128) x = x + 9;
+    else x = x + 9;*/
+  }
 }
