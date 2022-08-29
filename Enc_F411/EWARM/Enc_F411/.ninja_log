@@ -67,3 +67,6 @@
 2	361	6756136360140883	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Obj/Application/User/Core/main.o	db9fb2912bbb7a2d
 368	505	6756136361547160	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Exe/Enc_F411.out	64891eb90f95edc
 524	540	6756136362015941	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Exe/Enc_F411.hex	d3d6a2e090360e49
+2	270	6776870624509208	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Obj/Application/User/USB_DEVICE/App/usbd_cdc_if.o	d20d378b42681d71
+278	521	6776870626853044	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Exe/Enc_F411.out	64891eb90f95edc
+542	556	6776870627478078	C:/Users/CanchezAK/Documents/IAR EW for ARM/Enc_F411/EWARM/Enc_F411/Exe/Enc_F411.hex	d3d6a2e090360e49

@@ -27,7 +27,7 @@
         <EnableCache>0</EnableCache>
     </ArmDriver>
     <DebugChecksum>
-        <Checksum>971884369</Checksum>
+        <Checksum>2225561705</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -123,7 +123,7 @@
         <Bp6>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\diskio.c}.104.9" 0 0 1 "" 0 "" 0</Bp6>
         <Bp7>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff.c}.5979.2" 0 0 1 "" 0 "" 0</Bp7>
         <Bp8>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff.c}.2919.2" 0 0 1 "" 0 "" 0</Bp8>
-        <Bp9>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Core\Src\main.c}.164.3" 0 0 1 "" 0 "" 0</Bp9>
+        <Bp9>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Core\Src\main.c}.188.12" 0 0 1 "" 0 "" 0</Bp9>
         <Count>10</Count>
     </Breakpoints2>
     <TermIOLog>

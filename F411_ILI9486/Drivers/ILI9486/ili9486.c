@@ -84,7 +84,7 @@ void ILI9486_Init()
 
   ILI9486_WriteCom(0xB6);    
   ILI9486_WriteData(0x00);
-  ILI9486_WriteData(0x22); //past 0x22  
+  ILI9486_WriteData(0x4A); //past 0x22  
   ILI9486_WriteData(0x3B);
 
   ILI9486_WriteCom(0xE0);    
@@ -539,11 +539,11 @@ void ILI9486_DrawRect(unsigned int x, unsigned int y, unsigned int w, unsigned i
 void ILI9486_DrawTestChar(uint16_t x, uint16_t y, char c, unsigned char* Font, uint16_t TextColor, uint16_t BGColor)
 {
   uint8_t i, ys;
-  uint8_t buffer[36];
+  uint8_t buffer[38];
   
   memcpy(buffer, &Font[((c-32)*38)+5], 38);
   
-  for(ys = 0; ys < 18; ys++)
+  for(ys = 0; ys < 19; ys++)
   {
     for(i = 0; i < 8; i++)
     {
@@ -568,7 +568,7 @@ void ILI9486_WriteTestText(uint16_t x, uint16_t y, char *str, unsigned char* Fon
     {
         if(x + 16 >= HEIGHT)
         {
-            x = 0;
+            x = 10;
             y += 19;
 
             if(y + 19 >= WIDTH)

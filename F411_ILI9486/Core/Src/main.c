@@ -52,7 +52,6 @@ TIM_HandleTypeDef htim10;
 /* USER CODE BEGIN PV */
 uint32_t size = 0;
 /* SD Card variables*/
-char buffSD[512];
 /*End of SD Card variables*/
 extern unsigned char is_button;
 extern unsigned char button_pressed;
@@ -223,15 +222,15 @@ int main(void)
     Not tested function for drawing circle, maybe, worked, maybe, not, need testing.
     **/
     //ILI9486_DrawTestChar(200, 300, 'E', 0xFFFF, 0x0000);
-      ILI9486_WriteTestText(100, 300, "Test STRING/Ñòðîêà", (unsigned char*)&Font, 0xFFFF, 0x0000);
+    ILI9486_WriteTestText(50, 50, "Ñòðîêà", (unsigned char*)&Font, 0xFFFF, (3<<6));
     ILI9486_DrawCircle(50, 50, 20, 0, 255, 0);
     ILI9486_DrawThickLine(50, 100, 1, 2, 5, LINE_THICKNESS_MIDDLE, 255, 255, 255);
     /**
     Font's may be generated with errors, use GLCD Font Creator for create new font's (instruction on http://we.easyelectronics.ru/lcd_gfx/shrifty-s-glcd-font-creator-na-kolenke.html)
     **/
-    ILI9486_WriteTestText(15,50,"ÀÁÂÃÄÅÆÇÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÝÞß", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
+    ILI9486_WriteTestText(15,50,"ÀÁÂÃÄÅÆÇÈÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÝÞß", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
     //ILI9486_WriteText(5,15,"àáâ", Verdana14x14rus, 14, 0xFFFF, (3<<0x06));
-    ILI9486_WriteTestText(15,31,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
+    ILI9486_WriteTestText(15,82,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", (unsigned char*)&Font, 0xFFFF, (3<<0x06));
     for (uint16_t x = 0; x < 465; x++)
     {
       ILI9486_WriteTestText(x, 305, "à", (unsigned char*)&Font, 0xFFFF, (31<<0x0B));

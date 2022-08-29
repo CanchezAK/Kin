@@ -32,7 +32,9 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+extern int multipler;
+extern signed short count;
+uint8_t flag = 0;
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -283,12 +285,56 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
 {
   uint8_t result = USBD_OK;
   /* USER CODE BEGIN 7 */
-  USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;
+  /*USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;
   if (hcdc->TxState != 0){
     return USBD_BUSY;
   }
   USBD_CDC_SetTxBuffer(&hUsbDeviceFS, Buf, Len);
-  result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
+  result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);*/
+  if ((hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED) || (hUsbDeviceFS.ep0_state == USBD_EP0_STATUS_IN))
+    {
+        // The physical connection fails.
+        // Or: The phycical connection is open, but no VCP link up.
+      flag = 0;
+        result = USBD_FAIL;
+    }
+    else
+    {
+      if (flag == 0)
+      {
+        multipler = 0;
+        count = 0;
+        TIM4->CNT = 0;
+        flag = 1;
+      }
+     USBD_CDC_SetTxBuffer(&hUsbDeviceFS, Buf, Len);
+      // Busy wait if USB is busy or exit on success or disconnection happens
+     while(1)
+     {
+         //Check if USB went offline while retrying
+         if (((hUsbDeviceFS.dev_state) != USBD_STATE_CONFIGURED) || (hUsbDeviceFS.ep0_state == USBD_EP0_STATUS_IN))
+         {
+             result = USBD_FAIL;
+             break;
+         }
+         // Try send
+         result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
+         if(result == USBD_OK)
+         {
+             break;
+         }
+         else if(result == USBD_BUSY)
+         {
+             // Retry until USB device free.
+         }
+         else
+         {
+             // Any other failure
+             result = USBD_FAIL;
+             break;
+         }
+     }
+  }
   /* USER CODE END 7 */
   return result;
 }
