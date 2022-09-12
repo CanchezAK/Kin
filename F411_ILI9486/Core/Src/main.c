@@ -26,6 +26,7 @@
 #include "ili9486.h"
 #include "fonts.h"
 #include "user_diskio_spi.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -160,7 +161,7 @@ int main(void)
   f_mount(NULL, "", 0); //Unmounting drive, needed for have opportunity to have an operation in SD card in other places in program
   ILI9486_Fill(0, 0, 479, 319, 255, 0, 0);
   uint8_t ilibuff[] = {0};
-  sprintf(ilibuff, ReadBuff);
+  sprintf((char*)ilibuff, (char const*)ReadBuff);
   ILI9486_WriteTestText(16,50, (char*)ilibuff, (unsigned char*)&Font, 0xFFFF, (3<<6));
   HAL_Delay(5000);      //Debug point, you can delete this
   /* USER CODE END 2 */

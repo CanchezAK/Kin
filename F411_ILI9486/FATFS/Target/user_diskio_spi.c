@@ -446,7 +446,7 @@ DRESULT USER_SPI_write(BYTE drv, const BYTE *buff, DWORD sector, UINT count)
 DRESULT USER_SPI_ioctl(BYTE drv, BYTE ctrl,	void *buff)
 {
 	DRESULT res = RES_ERROR;
-	BYTE n, csd[16], *ptr = buff;
+	BYTE n, csd[16], *ptr = (BYTE*)buff;
 	WORD csize;
 
 	if(Stat & STA_NOINIT) return RES_NOTRDY;
