@@ -1,25 +1,25 @@
-"C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c"
+"C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c"
 -std=c++17
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\UTFT_TEST_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ex.pbi.dep
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\UTFT_TEST_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ex.pbi.dep
 -o
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\UTFT_TEST_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ex.pbi
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\UTFT_TEST_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ex.pbi
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Src
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Src
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM/../Core/Inc\
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM/../Core/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM/../Drivers/CMSIS/Include\
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM/../Drivers/CMSIS/Include
 -I
 C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\UTFT_TEST\Inc\
 -I
@@ -35,15 +35,15 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\cpp
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Core\Inc
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Core\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Inc
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\CMSIS\Include
+C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\Drivers\CMSIS\Include
 -I
 C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\Drivers\UTFT_TEST\Inc
 -I

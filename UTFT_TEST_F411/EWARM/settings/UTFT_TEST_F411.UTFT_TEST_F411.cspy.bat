@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
 
 @echo off 
 :end

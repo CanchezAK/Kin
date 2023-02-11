@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\CanchezAK\Documents\GitHub\Kin\UTFT_TEST_F411\EWARM\settings\UTFT_TEST_F411.UTFT_TEST_F411.driver.xcl" 
 }
