@@ -1,0 +1,16 @@
+# ninja log v5
+1	626	6976483300000000	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/main.xcl	5aa51e45fd4b49d7
+633	749	6976483301762274	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/main.pbi	14ab427c434b3aaa
+753	840	6976483302664035	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbd	4a446ba7f1d55d91
+844	2695	6976483320860558	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbw	e9a96e5f313b8e22
+0	142	6976493050000000	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/Drivers/cmsis/src/system_stm32f4xx.xcl	5969aca0d118a782
+158	372	6976493052653489	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/Drivers/cmsis/src/system_stm32f4xx.pbi	e5606282503fcf14
+378	447	6976493053443022	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbd	594c8b9ded80cffe
+452	1843	6976493066886913	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbw	e9a96e5f313b8e22
+1	127	6976493420000000	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/src/main.xcl	2ddb644b072e05e9
+138	297	6976493429302986	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/src/main.pbi	9805d446ed29eb84
+304	372	6976493430062464	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbd	3d9626ae278cc65f
+378	1758	6976493443464168	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbw	e9a96e5f313b8e22
+2	179	6976493749326094	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/src/main.pbi	9805d446ed29eb84
+184	292	6976493750475393	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbd	3d9626ae278cc65f
+298	1645	6976493763648564	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/BrowseInfo/CMSIS_Test.pbw	e9a96e5f313b8e22

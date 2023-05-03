@@ -1,0 +1,251 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  09/Feb/2023  15:36:13
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Exe\CMSIS_Test.out
+#    Map file     =
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\List\CMSIS_Test.map
+#    Command line =
+#        -f
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Exe\CMSIS_Test.out.rsp
+#        (C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\src\main.o
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\asm\startup_stm32f411xe.o
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\src\system_stm32f4xx.o
+#        --no_out_extension -o
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Exe\CMSIS_Test.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\List\CMSIS_Test.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\config\linker\ST\stm32f411xE.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section   Kind         Address    Size  Object
+  -------   ----         -------    ----  ------
+"A0":                              0x198
+  .intvec   ro code   0x800'0000   0x198  startup_stm32f411xe.o [1]
+                    - 0x800'0198   0x198
+
+"P1":                              0x1b8
+  .text     ro code   0x800'0198    0x22  fpinit_M.o [5]
+  .text     ro code   0x800'01bc    0x1e  cmain.o [6]
+  .text     ro code   0x800'01da     0x4  low_level_init.o [4]
+  .text     ro code   0x800'01de     0x4  main.o [3]
+  .text     ro code   0x800'01e2     0x4  exit.o [4]
+  .text     ro code   0x800'01e8     0xa  cexit.o [6]
+  .text     ro code   0x800'01f4    0x14  exit.o [7]
+  .text     ro code   0x800'0208    0x1c  cstartup_M.o [6]
+  .text     ro code   0x800'0224    0x14  system_stm32f4xx.o [2]
+  .text     ro code   0x800'0238    0x10  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0248     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'024c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0250     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0254     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0258     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'025c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0260     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0264     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0268     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'026c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0270     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0274     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0278     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'027c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0280     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0284     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0288     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'028c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0290     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0294     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0298     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'029c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02a0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02a4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02a8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02ac     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02b0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02b4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02b8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02bc     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02c0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02c4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02c8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02cc     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02d0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02d4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02d8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02dc     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02e0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02e4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02e8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02ec     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02f0     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02f4     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02f8     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'02fc     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0300     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0304     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0308     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'030c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0310     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0314     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0318     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'031c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0320     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0324     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0328     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'032c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0330     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0334     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0338     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'033c     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0340     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0344     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'0348     0x4  startup_stm32f411xe.o [1]
+  .text     ro code   0x800'034c     0x4  startup_stm32f411xe.o [1]
+                    - 0x800'0350   0x1b8
+
+"P2":                             0x2000
+  CSTACK             0x2000'0000  0x2000  <Block>
+    CSTACK  uninit   0x2000'0000  0x2000  <Block tail>
+                   - 0x2000'2000  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'0350   0x807'ffff  0x7'fcb0
+  0x2000'2000  0x2001'ffff  0x1'e000
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw data
+    ------                 -------  -------
+command line/config:
+    ---------------------------------------
+    Total:
+
+C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\asm: [1]
+    startup_stm32f411xe.o      688
+    ---------------------------------------
+    Total:                     688
+
+C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\src: [2]
+    system_stm32f4xx.o          20
+    ---------------------------------------
+    Total:                      20
+
+C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\src: [3]
+    main.o                       4
+    ---------------------------------------
+    Total:                       4
+
+dl7M_tln.a: [4]
+    exit.o                       4
+    low_level_init.o             4
+    ---------------------------------------
+    Total:                       8
+
+m7M_tls.a: [5]
+    fpinit_M.o                  34
+    ---------------------------------------
+    Total:                      34
+
+rt7M_tl.a: [6]
+    cexit.o                     10
+    cmain.o                     30
+    cstartup_M.o                28
+    ---------------------------------------
+    Total:                      68
+
+shb_l.a: [7]
+    exit.o                      20
+    ---------------------------------------
+    Total:                      20
+
+    Gaps                         6
+    Linker created                    8'192
+-------------------------------------------
+    Grand Total:               848    8'192
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                  0x800'01bd        Code  Gb  cmain.o [6]
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'2000         --   Gb  - Linker created -
+Region$$Table$$Base           0x0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x0         --   Gb  - Linker created -
+SystemInit             0x800'0225   0xe  Code  Gb  system_stm32f4xx.o [2]
+__cmain                0x800'01bd        Code  Gb  cmain.o [6]
+__exit                 0x800'01f5  0x14  Code  Gb  exit.o [7]
+__iar_init_vfp         0x800'0199        Code  Gb  fpinit_M.o [5]
+__iar_program_start    0x800'0209        Code  Gb  cstartup_M.o [6]
+__low_level_init       0x800'01db   0x4  Code  Gb  low_level_init.o [4]
+__vector_table         0x800'0000        Data  Gb  startup_stm32f411xe.o [1]
+_call_main             0x800'01c9        Code  Gb  cmain.o [6]
+_exit                  0x800'01e9        Code  Gb  cexit.o [6]
+exit                   0x800'01e3   0x4  Code  Gb  exit.o [4]
+main                   0x800'01df   0x4  Code  Gb  main.o [3]
+
+
+[1] = C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\asm
+[2] = C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\src
+[3] = C:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\src
+[4] = dl7M_tln.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+    848 bytes of readonly  code memory
+  8'192 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

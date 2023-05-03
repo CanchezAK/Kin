@@ -1,0 +1,51 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\src\system_stm32f4xx.c -xcl_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.xcl -macro_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\src\system_stm32f4xx.c -o C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\Drivers\cmsis\src --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\src\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\inc\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\inc\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\src\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\asm\ -Ol --predef_macros C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.tmp
+  rspfile_name = C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.xcl.rsp
+
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\src\main.c -xcl_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.xcl -macro_file C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\src\main.c -o C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\Obj\src --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\src\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\inc\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\inc\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\src\ -I C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\asm\ -Ol --predef_macros C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.tmp
+  rspfile_name = C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.xcl.rsp
+
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.pbi : INDEXER C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.xcl |  $
+C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Drivers\cmsis\src\system_stm32f4xx.c
+  flags = -out=C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.pbi -f C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.xcl
+
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.pbi : INDEXER C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.xcl |  $
+C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\src\main.c
+  flags = -out=C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.pbi -f C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.xcl
+
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbw : MAKEBROWSE C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbd
+  flags = C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbd -output C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbw
+
+build C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbd : PDBLINK C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.pbi |  $
+C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.pbi
+  flags = -M C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\CMSIS_Test.pbd C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\Drivers\cmsis\src\system_stm32f4xx.pbi C$:\Users\EliteBook\Documents\IAR_Projects\CMSIS_Test\Debug\BrowseInfo\src\main.pbi
+

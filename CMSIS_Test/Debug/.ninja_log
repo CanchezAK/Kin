@@ -1,0 +1,7 @@
+# ninja log v5
+8	423	6976491550390740	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Obj/Drivers/cmsis/asm/startup_stm32f411xe.o	244312adc942e06f
+11	296	6976492569476481	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Obj/main.o	6f31625c23e65872
+1	324	6976492569696382	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Obj/Drivers/cmsis/src/system_stm32f4xx.o	530e00c7a589bdde
+336	1062	6976492577162599	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Exe/CMSIS_Test.out	bb2847ad6e8ecb5a
+2	173	6976493738216917	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Obj/src/main.o	daf73940fb01a9b2
+184	273	6976493739278564	C:/Users/EliteBook/Documents/IAR_Projects/CMSIS_Test/Debug/Exe/CMSIS_Test.out	d4674cf282baaeae
