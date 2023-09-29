@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\EliteBook\Documents\GitHub\Kin\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.general.xcl" --backend -f "C:\Users\EliteBook\Documents\GitHub\Kin\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\EliteBook\Documents\GitHub\Kin\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\EliteBook\Documents\GitHub\Kin\F411_ILI9486\EWARM\settings\F411_ILI9486.F411_ILI9486.driver.xcl" 
 }

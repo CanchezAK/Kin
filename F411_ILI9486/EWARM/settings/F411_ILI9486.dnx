@@ -18,10 +18,10 @@
     <StLinkDriver>
         <stlinkserialNo>320E0608C315303030303032</stlinkserialNo>
         <stlinkfoundProbes />
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
         <stlinkResetStyle>1</stlinkResetStyle>
         <stlinkResetStrategy>1</stlinkResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </StLinkDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>

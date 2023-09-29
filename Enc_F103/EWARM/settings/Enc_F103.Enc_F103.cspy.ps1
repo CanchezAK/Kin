@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.general.xcl" --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.general.xcl" --backend -f "C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\settings\Enc_F103.Enc_F103.driver.xcl" 
 }

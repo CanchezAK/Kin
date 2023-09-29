@@ -1,8 +1,8 @@
-C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\Enc_F103\BrowseInfo\Middlewares\USB_Device_Library\usbd_ctlreq.pbi: \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\USB_DEVICE\Target\usbd_conf.h \
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\Enc_F103\BrowseInfo\Middlewares\USB_Device_Library\usbd_ctlreq.pbi: \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\USB_DEVICE\Target\usbd_conf.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
@@ -14,38 +14,38 @@ C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\Enc_F103\BrowseInf
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_stdlib.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Core\Inc\main.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Core\Inc\stm32f1xx_hal_conf.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Include\core_cm3.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Core\Inc\main.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Core\Inc\stm32f1xx_hal_conf.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Include\core_cm3.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_version.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_iccarm.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_version.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Include\cmsis_iccarm.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stddef.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  C:\Users\CanchezAK\Documents\IAR\ EW\ for\ ARM\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
+  C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F103\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h

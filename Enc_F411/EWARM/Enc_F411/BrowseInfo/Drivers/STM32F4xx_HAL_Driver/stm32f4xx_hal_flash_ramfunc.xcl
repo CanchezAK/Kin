@@ -1,33 +1,33 @@
-"C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c"
+"C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM\Enc_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ramfunc.pbi.dep
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM\Enc_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ramfunc.pbi.dep
 -o
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM\Enc_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ramfunc.pbi
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM\Enc_F411\BrowseInfo\Drivers\STM32F4xx_HAL_Driver\stm32f4xx_hal_flash_ramfunc.pbi
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Src
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Src
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../USB_DEVICE/App\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../USB_DEVICE/App
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../USB_DEVICE/Target\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../USB_DEVICE/Target
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Core/Inc\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Core/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Middlewares/ST/STM32_USB_Device_Library/Core/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\EWARM/../Drivers/CMSIS/Include\
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\EWARM/../Drivers/CMSIS/Include
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -35,23 +35,23 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\USB_DEVICE\App
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\USB_DEVICE\App
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\USB_DEVICE\Target
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\USB_DEVICE\Target
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Core\Inc
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Core\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Inc
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Middlewares\ST\STM32_USB_Device_Library\Core\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -I
-C:\Users\CanchezAK\Documents\IAR EW for ARM\Enc_F411\Drivers\CMSIS\Include
+C:\Users\EliteBook\Documents\GitHub\Kin\Enc_F411\Drivers\CMSIS\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
