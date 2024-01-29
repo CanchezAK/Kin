@@ -1,0 +1,3 @@
+C:/Users/EliteBook/Documents/rp2040/test/build/pioasm/CMakeFiles/pioasm.dir
+C:/Users/EliteBook/Documents/rp2040/test/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/EliteBook/Documents/rp2040/test/build/pioasm/CMakeFiles/rebuild_cache.dir
